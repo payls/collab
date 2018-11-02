@@ -1,3 +1,14 @@
+GIT
+  remote: https://github.com/plataformatec/devise
+  revision: 517010e2c543920c43378e527ddb62e1bc6eb490
+  specs:
+    devise (4.5.0)
+      bcrypt (~> 3.0)
+      orm_adapter (~> 0.1)
+      railties (>= 4.1.0, < 6.0)
+      responders
+      warden (~> 1.2.3)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -44,6 +55,7 @@ GEM
     bootstrap-sass (3.3.7)
       autoprefixer-rails (>= 5.2.1)
       sass (>= 3.3.4)
+    bootstrap_form (2.7.0)
     builder (3.2.3)
     byebug (10.0.2)
     coffee-rails (4.1.1)
@@ -56,12 +68,6 @@ GEM
     concurrent-ruby (1.0.5)
     crass (1.0.4)
     debug_inspector (0.0.3)
-    devise (4.3.0)
-      bcrypt (~> 3.0)
-      orm_adapter (~> 0.1)
-      railties (>= 4.1.0, < 5.2)
-      responders
-      warden (~> 1.2.3)
     erubis (2.7.0)
     execjs (2.7.0)
     ffi (1.9.25)
@@ -171,9 +177,10 @@ PLATFORMS
 
 DEPENDENCIES
   bootstrap-sass
+  bootstrap_form
   byebug
   coffee-rails (~> 4.1.0)
-  devise
+  devise!
   jbuilder (~> 2.0)
   jquery-rails
   pg (~> 0.15)
