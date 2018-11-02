@@ -1807,3 +1807,274 @@ ActionController::RoutingError (No route matches [GET] "/OneSignalSDKWorker.js")
   Rendered /usr/local/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
   Rendered /usr/local/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
   Rendered /usr/local/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (129.4ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (6.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'test0@test.com' LIMIT 1[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "users" ("name", "email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "test0"], ["email", "test0@test.com"], ["encrypted_password", "$2a$11$zzGx68ysVG62m3G/97cNo.q5n5Bf6EQtwGLvtNaTAaNJKDM9wU3ua"], ["created_at", "2018-11-02 11:56:06.832332"], ["updated_at", "2018-11-02 11:56:06.832332"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'test1@test.com' LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "users" ("name", "email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "test1"], ["email", "test1@test.com"], ["encrypted_password", "$2a$11$peDakPdoyBD3S/xcpeaCgO5JjB9HrgMws2UCXFrUPWqca3sNEscbC"], ["created_at", "2018-11-02 11:56:06.945256"], ["updated_at", "2018-11-02 11:56:06.945256"]]
+  [1m[36m (1.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'test2@test.com' LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "users" ("name", "email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "test2"], ["email", "test2@test.com"], ["encrypted_password", "$2a$11$h3VriKVX4cnOt.1Q2NxLNOdR3ddotpc7BVUSgxJ6jQ/MRFM5TGNOO"], ["created_at", "2018-11-02 11:56:07.055978"], ["updated_at", "2018-11-02 11:56:07.055978"]]
+  [1m[36m (1.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'test3@test.com' LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "users" ("name", "email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "test3"], ["email", "test3@test.com"], ["encrypted_password", "$2a$11$hNU/KA1YnY37O7A.jjgtvu2tLc6sj1zTYtO4KZXbc8luZJsfEPd4i"], ["created_at", "2018-11-02 11:56:07.169691"], ["updated_at", "2018-11-02 11:56:07.169691"]]
+  [1m[36m (1.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'test4@test.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "test4"], ["email", "test4@test.com"], ["encrypted_password", "$2a$11$XYGNecR9p.JHHUeM4z8mdeJ/exlH3QSGeavOcx56jRdwdKWFFNKiS"], ["created_at", "2018-11-02 11:56:07.280798"], ["updated_at", "2018-11-02 11:56:07.280798"]]
+  [1m[36m (1.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'test5@test.com' LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "users" ("name", "email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "test5"], ["email", "test5@test.com"], ["encrypted_password", "$2a$11$YBWufhDhgffaujSs2swkbeBfY/lLYwCUjfBOzFkkpp9JzBf1w6FFe"], ["created_at", "2018-11-02 11:56:07.391192"], ["updated_at", "2018-11-02 11:56:07.391192"]]
+  [1m[36m (1.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'test6@test.com' LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "users" ("name", "email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "test6"], ["email", "test6@test.com"], ["encrypted_password", "$2a$11$L1tJJVR3EpwYG5Im/0r70eV6hvHogF0aRc0BsejF421ZA1WBZKqD6"], ["created_at", "2018-11-02 11:56:07.502012"], ["updated_at", "2018-11-02 11:56:07.502012"]]
+  [1m[36m (1.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'test7@test.com' LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "users" ("name", "email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "test7"], ["email", "test7@test.com"], ["encrypted_password", "$2a$11$zICgZsC2LMOdfmS3KVVnpuqaymIAddXYly9DCFSzQhO09umQ32SEi"], ["created_at", "2018-11-02 11:56:07.612508"], ["updated_at", "2018-11-02 11:56:07.612508"]]
+  [1m[36m (1.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'test8@test.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "test8"], ["email", "test8@test.com"], ["encrypted_password", "$2a$11$rSfo.Bef4tLaNF4EVn5bUupBuMpVjoHD56kVirKvwDAZiAiWjZKci"], ["created_at", "2018-11-02 11:56:07.723257"], ["updated_at", "2018-11-02 11:56:07.723257"]]
+  [1m[36m (1.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'test9@test.com' LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "users" ("name", "email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "test9"], ["email", "test9@test.com"], ["encrypted_password", "$2a$11$2LW/tHApcAP3mfl8mZgT/OPnf.p8y0fA.4IGCJ3/QOCPHPRh9WXDa"], ["created_at", "2018-11-02 11:56:07.834805"], ["updated_at", "2018-11-02 11:56:07.834805"]]
+  [1m[36m (1.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "categories" ("branch", "name") VALUES ($1, $2) RETURNING "id"[0m  [["branch", "hobby"], ["name", "Arts"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "categories" ("branch", "name") VALUES ($1, $2) RETURNING "id"  [["branch", "hobby"], ["name", "Crafts"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "categories" ("branch", "name") VALUES ($1, $2) RETURNING "id"[0m  [["branch", "hobby"], ["name", "Sports"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "categories" ("branch", "name") VALUES ($1, $2) RETURNING "id"  [["branch", "hobby"], ["name", "Sciences"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "categories" ("branch", "name") VALUES ($1, $2) RETURNING "id"[0m  [["branch", "hobby"], ["name", "Collecting"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "categories" ("branch", "name") VALUES ($1, $2) RETURNING "id"  [["branch", "hobby"], ["name", "Reading"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "categories" ("branch", "name") VALUES ($1, $2) RETURNING "id"[0m  [["branch", "hobby"], ["name", "Other"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "categories" ("branch", "name") VALUES ($1, $2) RETURNING "id"  [["branch", "study"], ["name", "Arts and Humanities"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "categories" ("branch", "name") VALUES ($1, $2) RETURNING "id"[0m  [["branch", "study"], ["name", "Physical Science and Engineering"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "categories" ("branch", "name") VALUES ($1, $2) RETURNING "id"  [["branch", "study"], ["name", "Math and Logic"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "categories" ("branch", "name") VALUES ($1, $2) RETURNING "id"[0m  [["branch", "study"], ["name", "Computer Science"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "categories" ("branch", "name") VALUES ($1, $2) RETURNING "id"  [["branch", "study"], ["name", "Data Science"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "categories" ("branch", "name") VALUES ($1, $2) RETURNING "id"[0m  [["branch", "study"], ["name", "Economics and Finance"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "categories" ("branch", "name") VALUES ($1, $2) RETURNING "id"  [["branch", "study"], ["name", "Business"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "categories" ("branch", "name") VALUES ($1, $2) RETURNING "id"[0m  [["branch", "study"], ["name", "Social Sciences"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "categories" ("branch", "name") VALUES ($1, $2) RETURNING "id"  [["branch", "study"], ["name", "Language"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "categories" ("branch", "name") VALUES ($1, $2) RETURNING "id"[0m  [["branch", "study"], ["name", "Other"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "categories" ("branch", "name") VALUES ($1, $2) RETURNING "id"  [["branch", "team"], ["name", "Study"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "categories" ("branch", "name") VALUES ($1, $2) RETURNING "id"[0m  [["branch", "team"], ["name", "Development"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "categories" ("branch", "name") VALUES ($1, $2) RETURNING "id"  [["branch", "team"], ["name", "Arts and Hobby"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "categories" ("branch", "name") VALUES ($1, $2) RETURNING "id"[0m  [["branch", "team"], ["name", "Other"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  [1m[36m (2.6ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL) [0m
+  [1m[35m (1.2ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to DeviseCreateUsers (20181102095923)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (5.7ms)[0m  [1mCREATE TABLE "users" ("id" serial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" timestamp, "last_sign_in_at" timestamp, "current_sign_in_ip" inet, "last_sign_in_ip" inet, "name" character varying DEFAULT '' NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (0.8ms)[0m  CREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")
+  [1m[36m (0.7ms)[0m  [1mCREATE UNIQUE INDEX  "index_users_on_reset_password_token" ON "users"  ("reset_password_token")[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20181102095923"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+Migrating to CreatePosts (20181102112853)
+  [1m[35m (0.3ms)[0m  BEGIN
+DEPRECATION WARNING: `#timestamps` was called without specifying an option for `null`. In Rails 5, this behavior will change to `null: false`. You should manually specify `null: true` to prevent the behavior of your existing migrations from changing. (called from block in change at /Users/payalsonawane/Documents/collab/db/migrate/20181102112853_create_posts.rb:8)
+  [1m[36m (3.4ms)[0m  [1mCREATE TABLE "posts" ("id" serial primary key, "title" character varying, "content" text, "category_id" integer, "user_id" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35m (0.9ms)[0m  CREATE  INDEX  "index_posts_on_category_id" ON "posts"  ("category_id")
+  [1m[36m (0.7ms)[0m  [1mCREATE  INDEX  "index_posts_on_user_id" ON "posts"  ("user_id")[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20181102112853"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+Migrating to CreateCategories (20181102112902)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (2.7ms)[0m  [1mCREATE TABLE "categories" ("id" serial primary key, "name" character varying, "branch" character varying) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20181102112902"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (2.3ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'categories'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (2.0ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'posts'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (1.6ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (0.7ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'test0@test.com' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("name", "email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "test0"], ["email", "test0@test.com"], ["encrypted_password", "$2a$11$DyfEtjXMkXoqcXFuKHU3Yu6.Wx7lG5OHf7XTu7BALNxRLZxn41S.i"], ["created_at", "2018-11-02 11:59:33.021362"], ["updated_at", "2018-11-02 11:59:33.021362"]]
+  [1m[36m (1.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'test1@test.com' LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "users" ("name", "email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "test1"], ["email", "test1@test.com"], ["encrypted_password", "$2a$11$AJVxrYz4U5YC2Q0R9UQ3uO8EAg1dxKiGeAWjBDB1Fu/kK1E4sZgpO"], ["created_at", "2018-11-02 11:59:33.132740"], ["updated_at", "2018-11-02 11:59:33.132740"]]
+  [1m[36m (1.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'test2@test.com' LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "users" ("name", "email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "test2"], ["email", "test2@test.com"], ["encrypted_password", "$2a$11$XNfg5CSeDf51DLmwuLx3EeiqqvsEtIrqZCWchvu/d1m7ry3mlzOxi"], ["created_at", "2018-11-02 11:59:33.243599"], ["updated_at", "2018-11-02 11:59:33.243599"]]
+  [1m[36m (1.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'test3@test.com' LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "users" ("name", "email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "test3"], ["email", "test3@test.com"], ["encrypted_password", "$2a$11$L3RoIXrGMf7BrnndjKpGWuU4eVWoqis8vBZpItvFYcxJvruVge1.u"], ["created_at", "2018-11-02 11:59:33.359292"], ["updated_at", "2018-11-02 11:59:33.359292"]]
+  [1m[36m (1.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'test4@test.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "test4"], ["email", "test4@test.com"], ["encrypted_password", "$2a$11$MGx1Mg/eyUqso00EYkDrQu.z3T2U64LRiZTv8Tz/4SQUevyRfVpwe"], ["created_at", "2018-11-02 11:59:33.470368"], ["updated_at", "2018-11-02 11:59:33.470368"]]
+  [1m[36m (1.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'test5@test.com' LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "users" ("name", "email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "test5"], ["email", "test5@test.com"], ["encrypted_password", "$2a$11$4Ras7t1sV8TzN171CyCGQuio5rdsUW01S0UvG5f29rnDnXG55tVdC"], ["created_at", "2018-11-02 11:59:33.581145"], ["updated_at", "2018-11-02 11:59:33.581145"]]
+  [1m[36m (1.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'test6@test.com' LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "users" ("name", "email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "test6"], ["email", "test6@test.com"], ["encrypted_password", "$2a$11$Ry2Yu.GADm2DZFDB04zWNugyaHtWSomyYiHan28AP88UZH7YVLcOW"], ["created_at", "2018-11-02 11:59:33.691996"], ["updated_at", "2018-11-02 11:59:33.691996"]]
+  [1m[36m (1.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'test7@test.com' LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "users" ("name", "email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "test7"], ["email", "test7@test.com"], ["encrypted_password", "$2a$11$O5i2uF7eja1Ifpf25/HqQ.z6OuEgg5mv3GoWznvPqfJs2p161pxwi"], ["created_at", "2018-11-02 11:59:33.808058"], ["updated_at", "2018-11-02 11:59:33.808058"]]
+  [1m[36m (1.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'test8@test.com' LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "users" ("name", "email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "test8"], ["email", "test8@test.com"], ["encrypted_password", "$2a$11$lhGqVgyYIuf9ooSCn.6HAOHGvqx3tYHfBhhIHKx71P1mDrgD8MdUy"], ["created_at", "2018-11-02 11:59:33.924831"], ["updated_at", "2018-11-02 11:59:33.924831"]]
+  [1m[36m (1.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'test9@test.com' LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "users" ("name", "email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "test9"], ["email", "test9@test.com"], ["encrypted_password", "$2a$11$0m3aI4aed8IQlLyVmZ4BgO/PyX8oy49BjNclyDcYGhg85NUMbGyGy"], ["created_at", "2018-11-02 11:59:34.036484"], ["updated_at", "2018-11-02 11:59:34.036484"]]
+  [1m[36m (1.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "categories" ("branch", "name") VALUES ($1, $2) RETURNING "id"[0m  [["branch", "hobby"], ["name", "Arts"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "categories" ("branch", "name") VALUES ($1, $2) RETURNING "id"  [["branch", "hobby"], ["name", "Crafts"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "categories" ("branch", "name") VALUES ($1, $2) RETURNING "id"[0m  [["branch", "hobby"], ["name", "Sports"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "categories" ("branch", "name") VALUES ($1, $2) RETURNING "id"  [["branch", "hobby"], ["name", "Sciences"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "categories" ("branch", "name") VALUES ($1, $2) RETURNING "id"[0m  [["branch", "hobby"], ["name", "Collecting"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "categories" ("branch", "name") VALUES ($1, $2) RETURNING "id"  [["branch", "hobby"], ["name", "Reading"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "categories" ("branch", "name") VALUES ($1, $2) RETURNING "id"[0m  [["branch", "hobby"], ["name", "Other"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "categories" ("branch", "name") VALUES ($1, $2) RETURNING "id"  [["branch", "study"], ["name", "Arts and Humanities"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "categories" ("branch", "name") VALUES ($1, $2) RETURNING "id"[0m  [["branch", "study"], ["name", "Physical Science and Engineering"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "categories" ("branch", "name") VALUES ($1, $2) RETURNING "id"  [["branch", "study"], ["name", "Math and Logic"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "categories" ("branch", "name") VALUES ($1, $2) RETURNING "id"[0m  [["branch", "study"], ["name", "Computer Science"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "categories" ("branch", "name") VALUES ($1, $2) RETURNING "id"  [["branch", "study"], ["name", "Data Science"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "categories" ("branch", "name") VALUES ($1, $2) RETURNING "id"[0m  [["branch", "study"], ["name", "Economics and Finance"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "categories" ("branch", "name") VALUES ($1, $2) RETURNING "id"  [["branch", "study"], ["name", "Business"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "categories" ("branch", "name") VALUES ($1, $2) RETURNING "id"[0m  [["branch", "study"], ["name", "Social Sciences"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "categories" ("branch", "name") VALUES ($1, $2) RETURNING "id"  [["branch", "study"], ["name", "Language"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "categories" ("branch", "name") VALUES ($1, $2) RETURNING "id"[0m  [["branch", "study"], ["name", "Other"]]
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "categories" ("branch", "name") VALUES ($1, $2) RETURNING "id"  [["branch", "team"], ["name", "Study"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "categories" ("branch", "name") VALUES ($1, $2) RETURNING "id"[0m  [["branch", "team"], ["name", "Development"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "categories" ("branch", "name") VALUES ($1, $2) RETURNING "id"  [["branch", "team"], ["name", "Arts and Hobby"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "categories" ("branch", "name") VALUES ($1, $2) RETURNING "id"[0m  [["branch", "team"], ["name", "Other"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
